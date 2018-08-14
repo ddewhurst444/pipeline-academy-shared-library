@@ -10,7 +10,8 @@ def warning(message) {
 }
 
 def setEnv(script, envString) {
-        ${script.env.TEST = envString}
+        //${script.env.TEST = envString}
+        return ${script.env.TEST}
       }
 
 /*class TestFuncs {
