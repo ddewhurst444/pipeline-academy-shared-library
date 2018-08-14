@@ -11,7 +11,7 @@ def warning(message) {
 
 def setEnv(script, envString) {
         //${script.env.TEST = envString}
-        return ${script.env.TEST}
+        echo "${script.env.TEST}"
       }
 
 /*class TestFuncs {
