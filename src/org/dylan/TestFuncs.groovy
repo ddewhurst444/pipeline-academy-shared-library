@@ -1,5 +1,6 @@
 package org.dylan
 
+
 def info(message) {
     echo "INFO: ${message}"
 }
@@ -7,6 +8,10 @@ def info(message) {
 def warning(message) {
     echo "WARNING: ${message}"
 }
+
+def setEnv(script, envString) {
+        ${script.env.TEST = envString}
+      }
 
 /*class TestFuncs {
 
