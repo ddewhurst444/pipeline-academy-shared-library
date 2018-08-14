@@ -1,6 +1,6 @@
-package org.dylan;
+package org.dylan
 
-class testFuncs {
+class TestFuncs {
 
     static def setEnv(script, envString) {
         ${script.env.TEST = envString}
