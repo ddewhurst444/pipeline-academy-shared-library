@@ -1,14 +1,23 @@
 package org.dylan
 
-class TestFuncs {
+def info(message) {
+    echo "INFO: ${message}"
+}
+
+def warning(message) {
+    echo "WARNING: ${message}"
+}
+
+/*class TestFuncs {
 
     /*static def setEnv(script, envString) {
         ${script.env.TEST = envString}
-      }*/
+      }
     //def steps
-    TestFuncs() {}
+    def steps
+    Utilities(steps) {this.steps = steps}
 
     def multiply(int a, int b) {
         return  a * b
     }
-}
+}*/
